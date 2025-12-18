@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./site:/app
+    ports:
+      - "8080:8080"
+    command: sh -c "npm install && node server.js"
