@@ -3,10 +3,25 @@ body {
   text-align: center;
 }
 
+#canvas-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 1px solid #aaa;
+}
+
 canvas {
-  border: 1px solid #000;
-  cursor: crosshair;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.toolbar {
+  margin-top: 10px;
+}
+
+canvas {
+  background: transparent;
 }
 
 #gallery img {
